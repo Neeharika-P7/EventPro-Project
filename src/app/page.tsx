@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '@/store/useAppStore';
-import Navbar from '@/components/landing/Navbar';
 import HeroSection from '@/components/landing/HeroSection';
 import EventCategories from '@/components/landing/EventCategories';
 import FeaturedEvents from '@/components/landing/FeaturedEvents';
@@ -98,7 +97,6 @@ export default function Home() {
         if (!dataLoaded) return <LoadingLanding />;
         return (
           <div>
-            <Navbar />
             <HeroSection />
             <EventCategories />
             <FeaturedEvents />
